@@ -4,6 +4,7 @@ import operaciones.OpBasicas;
 
 import java.net.URL;
 
+import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
 import org.apache.log4j.PropertyConfigurator;
@@ -12,10 +13,13 @@ import org.apache.log4j.PropertyConfigurator;
 import operaciones.Comprar;
 
 public class Main {
-
+	
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		BasicConfigurator.configure();
+		logger.info("Ha iniciado el programa");
+		
 		OpBasicas inicio = new OpBasicas();
 
 		inicio.inicio();
@@ -26,6 +30,7 @@ public class Main {
 
 		comprar.comprarAleatorio(OpBasicas.vagon);
 		
+		logger.info("Se ha hecho la primera compra aleatoria de billetes");
 		
 		
 
