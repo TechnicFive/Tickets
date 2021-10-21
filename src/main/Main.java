@@ -42,8 +42,8 @@ public class Main {
 		comprar.comprarAleatorio(OpBasicas.vagon);
 		
 		
-		logger.warn("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getFila());
-		logger.warn("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getColumn());
+		logger.error("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getFila());
+		logger.error("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getColumn());
 		comprar.comprarNominal(OpBasicas.vagon);
 		
 		
