@@ -55,7 +55,8 @@ public class Main {
 		comprar.comprarAleatorio(OpBasicas.vagon);
 
 		comprar.comprarAleatorio(OpBasicas.vagon);
-
+		
+		logger.info("Se han hecho todas las compras");
 		
 	}
 	private static Logger logger = LogManager.getLogger(Main.class);
