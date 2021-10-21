@@ -26,6 +26,22 @@ public class OpBasicas {
 		return vagon;
 	}
 
+	public int getFila() {
+		return fila;
+	}
+
+	public void setFila(int fila) {
+		this.fila = fila;
+	}
+
+	public int getColumn() {
+		return column;
+	}
+
+	public void setColumn(int column) {
+		this.column = column;
+	}
+
 	// Mostrar el vagon 
 	public void pintar (char[][] vagon) {
 

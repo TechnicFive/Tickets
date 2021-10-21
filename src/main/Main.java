@@ -23,8 +23,9 @@ public class Main {
 		OpBasicas inicio = new OpBasicas();
 
 		inicio.inicio();
-
+		
 		Comprar comprar = new Comprar();
+		
 
 		comprar.comprarAleatorio(OpBasicas.vagon);
 
@@ -41,8 +42,10 @@ public class Main {
 		comprar.comprarAleatorio(OpBasicas.vagon);
 		
 		
-
+		logger.warn("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getFila());
+		logger.warn("Recuerde que los numeros de columana empiezan a contar en 0 hasta " +inicio.getColumn());
 		comprar.comprarNominal(OpBasicas.vagon);
+		
 		
 
 		comprar.comprarAleatorio(OpBasicas.vagon);
