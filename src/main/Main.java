@@ -17,7 +17,10 @@ public class Main {
 	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		BasicConfigurator.configure();
+		ClassLoader loader = Thread.currentThread().getContextClassLoader();
+		URL url = loader.getResource("log4j.properties");
+		System.out.println(url);
+    	PropertyConfigurator.configure(url);
 		logger.info("Ha iniciado el programa");
 		
 		OpBasicas inicio = new OpBasicas();
